@@ -3,8 +3,10 @@ import OpenAI from "openai";
 import User from '../models/user.model.js';
 import WorkoutPlan from '../models/workoutPlan.model.js';
 
+const apiKey1 = process.env.OPENAI_API_KEY;
+
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY || "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",
+    apiKey: apiKey1,
 });
 
 const createWorkoutPlan = async (req, res) => {
