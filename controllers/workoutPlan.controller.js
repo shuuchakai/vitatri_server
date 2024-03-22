@@ -3,7 +3,7 @@ import OpenAI from "openai";
 import User from '../models/user.model.js';
 import WorkoutPlan from '../models/workoutPlan.model.js';
 
-const apiKey1 = process.env.OPENAI_API_KEY;
+const apiKey1 = process.env.OPENAI_API_KEY || "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";
 
 const openai = new OpenAI({
     apiKey: apiKey1,
