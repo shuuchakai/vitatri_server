@@ -29,7 +29,6 @@ app.use(helmet());
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cookieParser());
 app.disable('x-powered-by');
 
 app.get('/', (req, res) => {
