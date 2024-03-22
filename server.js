@@ -26,7 +26,10 @@ app.use(helmet());
 // });
 // app.use(limiter);
 
-app.use(cors());
+app.use(cors({
+  origin : "https://vitatri-production.up.railway.app",
+  credentials: true,
+}))
 app.use(morgan('dev'));
 app.use(express.json());
 app.disable('x-powered-by');
