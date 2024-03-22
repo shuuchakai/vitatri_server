@@ -26,10 +26,7 @@ app.use(helmet());
 // });
 // app.use(limiter);
 
-app.use(cors({
-    origin: 'http://localhost:5173', // reemplaza esto con la URL de tu frontend
-    credentials: true
-}));
+app.use(cors();
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cookieParser());
