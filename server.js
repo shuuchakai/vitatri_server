@@ -26,7 +26,7 @@ app.use(helmet());
 // });
 // app.use(limiter);
 
-app.use(cors();
+app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cookieParser());
